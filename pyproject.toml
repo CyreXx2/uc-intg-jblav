@@ -1,0 +1,22 @@
+[project]
+name = "uc-intg-jblav"
+dynamic = ["version"]
+description = "JBL MA Series AV Receiver integration for Unfolded Circle Remote"
+authors = [
+    {name = "Meir Miyara", email = "meir.miyara@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MPL-2.0"}
+dependencies = [
+    "ucapi-framework>=1.8.3",
+    "ucapi>=0.5.2",
+    "aiohttp>=3.9.0",
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "intg_jblav.__version__"}
+
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"

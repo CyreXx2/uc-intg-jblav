@@ -1,0 +1,38 @@
+{
+  "driver_id": "jblav",
+  "version": "1.0.0",
+  "min_core_api": "0.22.0",
+  "name": {
+    "en": "JBL AV Receiver"
+  },
+  "icon": "uc:cloud-music",
+  "description": {
+    "en": "Integration for JBL MA Series AV Receivers (MA510/MA710/MA7100HP/MA9100HP)"
+  },
+  "developer": {
+    "name": "Meir Miyara",
+    "email": "meir.miyara@gmail.com"
+  },
+  "home_page": "https://github.com/mase1981/uc-intg-jblav",
+  "release_date": "2026-02-04",
+  "setup_data_schema": {
+    "title": {
+      "en": "JBL AV Receiver Setup"
+    },
+    "settings": [
+      {
+        "id": "info",
+        "label": {
+          "en": "Setup Information"
+        },
+        "field": {
+          "label": {
+            "value": {
+              "en": "Enter your JBL MA Series receiver IP address. Ensure the receiver is powered on and connected to your network."
+            }
+          }
+        }
+      }
+    ]
+  }
+}
